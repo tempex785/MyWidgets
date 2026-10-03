@@ -6,6 +6,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".OnboardingActivity" android:exported="false"/>
+        <activity android:name=".SubscribeActivity" android:exported="false"/>
+        <activity android:name=".ContactActivity" android:exported="false"/>
+        <activity android:name=".AboutActivity" android:exported="false"/>
+        <activity android:name=".TasksActivity" android:exported="false"/>
+        <activity android:name=".TeamsActivity" android:exported="false"/>
         <receiver android:name=".ClockWidget" android:exported="true">
             <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/clock_info"/>
@@ -21,6 +27,14 @@
         <receiver android:name=".TasbihWidget" android:exported="true">
             <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/tasbih_info"/>
+        </receiver>
+        <receiver android:name=".TasksWidget" android:exported="true">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/tasks_info"/>
+        </receiver>
+        <receiver android:name=".SportsWidget" android:exported="true">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/sports_info"/>
         </receiver>
     </application>
 </manifest>
