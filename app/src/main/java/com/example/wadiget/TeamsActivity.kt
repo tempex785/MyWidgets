@@ -26,8 +26,15 @@ class TeamsActivity : Activity() {
                 text = team; isChecked = team in selected(); textSize = 16f
                 setOnCheckedChangeListener { _, c ->
                     val s = selected()
-                    if (c) { if (s.size >= 5) { isChecked = false; return@setOnCheckedChangeListener } s.add(team) }
-                    else s.remove(team)
+                    if (c) {
+                        if (s.size >= 5) {
+                            isChecked = false
+                            return@setOnCheckedChangeListener
+                        }
+                        s.add(team)
+                    } else {
+                        s.remove(team)
+                    }
                     prefs.edit().putString("teams", s.joinToString(",")).apply()
                 }
             })
