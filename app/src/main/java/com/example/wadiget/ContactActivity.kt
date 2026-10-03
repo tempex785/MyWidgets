@@ -27,9 +27,7 @@ class ContactActivity : Activity() {
                 }
                 val i = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:support@wadiget.app")).apply {
                     putExtra(Intent.EXTRA_SUBJECT, "رسالة من ${name.text}")
-                    putExtra(Intent.EXTRA_TEXT, "${msg.text}
-
-— ${name.text} (${email.text})")
+                    putExtra(Intent.EXTRA_TEXT, "${msg.text}\n\n— ${name.text} (${email.text})")
                 }
                 try { startActivity(i) } catch (e: Exception) {
                     Toast.makeText(this@ContactActivity, "لا يوجد تطبيق بريد — احفظ رسالتك لاحقًا", Toast.LENGTH_LONG).show()

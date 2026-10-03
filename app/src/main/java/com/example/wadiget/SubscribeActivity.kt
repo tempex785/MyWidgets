@@ -18,10 +18,7 @@ class SubscribeActivity : Activity() {
         val root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(48, 48, 48, 48) }
         root.addView(TextView(this).apply { text = "ودجتي Pro"; textSize = 26f; setTypeface(null, android.graphics.Typeface.BOLD) })
         root.addView(TextView(this).apply {
-            text = "✦ الاستوديو الكامل: تدرجات وخطوط وتخطيطات
-✦ ويدجتات غير محدودة على الشاشة
-✦ الأذان والتذكيرات بصوت تلقائي
-✦ بدون إعلانات"; textSize = 15f; setPadding(0, 16, 0, 24)
+            text = "✦ الاستوديو الكامل: تدرجات وخطوط وتخطيطات\n✦ ويدجتات غير محدودة على الشاشة\n✦ الأذان والتذكيرات بصوت تلقائي\n✦ بدون إعلانات"; textSize = 15f; setPadding(0, 16, 0, 24)
         })
         fun plan(label: String, planId: String) = root.addView(Button(this).apply {
             text = label; setOnClickListener {

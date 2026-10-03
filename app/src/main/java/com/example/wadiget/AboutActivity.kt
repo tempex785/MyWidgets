@@ -16,11 +16,7 @@ class AboutActivity : Activity() {
         val root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(48, 48, 48, 48) }
         val ver = try { packageManager.getPackageInfo(packageName, 0).versionName } catch (e: Exception) { "2.0" }
         root.addView(TextView(this).apply { text = "ودجتي"; textSize = 26f; setTypeface(null, android.graphics.Typeface.BOLD) })
-        root.addView(TextView(this).apply { text = "الإصدار $ver
-
-ويدجتات للشاشة الرئيسية: مواقيت الصلاة والتاريخ الهجري والأذكار والتسبيح والمهام.
-
-صُنع بـ Kotlin ❤"; textSize = 14f; setPadding(0, 16, 0, 24) })
+        root.addView(TextView(this).apply { text = "الإصدار $ver\n\nويدجتات للشاشة الرئيسية: مواقيت الصلاة والتاريخ الهجري والأذكار والتسبيح والمهام.\n\nصُنع بـ Kotlin ❤"; textSize = 14f; setPadding(0, 16, 0, 24) })
         root.addView(Button(this).apply {
             text = "قيّمنا ⭐ على Google Play"
             setOnClickListener {

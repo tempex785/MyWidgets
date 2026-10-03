@@ -15,8 +15,7 @@ class SportsWidget : AppWidgetProvider() {
         rv.setTextViewText(R.id.body, if (teams.isBlank())
             "اختر فرقك المفضلة من التطبيق لتظهر مبارياتها وترتيبها هنا"
         else
-            "فرقك: $teams
-ستُعرض النتائج المباشرة وجداول الترتيب هنا عند ربط خدمة بيانات رياضية.")
+            "فرقك: $teams\nستُعرض النتائج المباشرة وجداول الترتيب هنا عند ربط خدمة بيانات رياضية.")
         rv.setTextColor(R.id.title, accent)
         rv.setTextColor(R.id.body, WidgetTheme.white())
         val pi = PendingIntent.getActivity(ctx, 0, Intent(ctx, TeamsActivity::class.java),

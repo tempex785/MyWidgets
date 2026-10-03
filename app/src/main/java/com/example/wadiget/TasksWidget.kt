@@ -16,8 +16,7 @@ class TasksWidget : AppWidgetProvider() {
         rv.setTextViewText(R.id.summary,
             if (tasks.isEmpty()) "لا توجد مهام — أضفها من التطبيق"
             else "غير المنجزة: $pending من ${tasks.size}")
-        rv.setTextViewText(R.id.list, tasks.take(3).joinToString("
-") { (if (it.done) "☑ " else "☐ ") + it.name })
+        rv.setTextViewText(R.id.list, tasks.take(3).joinToString("\n") { (if (it.done) "☑ " else "☐ ") + it.name })
         rv.setTextColor(R.id.title, accent)
         rv.setTextColor(R.id.summary, WidgetTheme.white())
         rv.setTextColor(R.id.list, WidgetTheme.grey())
