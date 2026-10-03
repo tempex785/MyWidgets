@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:padding="16dp"
+    android:background="#CC111318">
+    <TextView android:id="@+id/dhikr" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#FF6B57" android:textSize="18sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/count" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#FFFFFF" android:textSize="40sp" android:textStyle="bold" android:layout_marginTop="4dp"/>
+    <TextView android:id="@+id/cycle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#B0B4BC" android:textSize="11sp" android:layout_marginTop="4dp"/>
+    <TextView android:id="@+id/reset" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#B0B4BC" android:textSize="11sp" android:text="إعادة التصفير ↺" android:layout_marginTop="6dp"/>
+</LinearLayout>
