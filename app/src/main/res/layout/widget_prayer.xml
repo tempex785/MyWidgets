@@ -3,7 +3,7 @@
     android:orientation="vertical" android:gravity="center" android:padding="16dp"
     android:background="#CC111318">
     <TextView android:id="@+id/next" android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:textColor="#FF6B57" android:textSize="22sp" android:textStyle="bold"/>
+        android:textColor="#FF6B57" android:textSize="20sp" android:textStyle="bold"/>
     <TextView android:id="@+id/all" android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textColor="#FFFFFF" android:textSize="12sp" android:gravity="center" android:layout_marginTop="6dp"/>
 </LinearLayout>
